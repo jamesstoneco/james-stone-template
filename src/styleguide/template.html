@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Guide</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/styleguide.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/github.min.css">
+
+    <!-- Style guide-specific CSS goes here. -->
+    <style>
+
+    </style>
+  </head>
+  <body>
+
+    <div class="column row">
+      <h1>James Stone Consulting - Coded Style Guide Example</h1>
+      <p class="lead">This style guide was built with Foundation for Sites. For more information on how to use this responsive front-end framework, check out the documentation, get help from the Foundation community, or request immediate technical support.</p>
+      <a href="/" class="button">Templates</a>
+      <a href="https://www.jamesstone.com" class="secondary button">James Stone Consulting</a>
+      <a href="http://foundation.zurb.com/docs/" class="secondary button">ZURB Foundation Docs</a>
+      <a href="http://foundation.zurb.com/forum/" class="secondary button">Foundation Forum</a>
+      <a href="http://foundation.zurb.com/business/business-support.html" class="secondary button">Technical Support</a>
+    </div>
+
+    <div class="column row"><div class="row collapse">
+
+      <div class="large-3 medium-4 columns" data-sticky-container>
+        <ul class="vertical menu">
+          {{#each pages}}
+            <li><a href="#{{ anchor }}">{{ title }}</a></li>
+          {{/each}}
+        </ul>
+      </div>
+
+      <div class="large-9 medium-8 columns">
+        {{#each pages}}
+          <section class="ss-section" id="{{ anchor }}">
+            {{ body }}
+          </section>
+        {{/each}}
+      </div>
+
+    </div></div>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

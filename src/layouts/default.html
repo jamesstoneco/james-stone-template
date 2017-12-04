@@ -1,0 +1,36 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcus Handa Design System</title>
+
+  <script src="https://use.typekit.net/rmj8rad.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+
+  <link rel="icon" type="image/png" href="{{root}}assets/img/favicon-32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{{root}}assets/img/favicon-16.png" sizes="16x16" />
+
+</head>
+<body>
+
+  {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+  {{> header}}
+  {{> body}}
+
+  {{#unlesspage 'thanks' '404'}}
+  {{> footer}}
+  {{/unlesspage}}
+
+  <div class="reveal" id="outcome-screenshot-modal" data-reveal> </div>
+
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+
+  <script src="{{root}}assets/js/app.js"></script>
+</body>
+</html>

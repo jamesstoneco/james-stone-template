@@ -1,0 +1,49 @@
+// brand colors
+$brand-primary: #fa7252;
+$brand-white: #ffffff;
+$brand-black: #000000;
+
+// text colors
+$text-body-copy: #828282;
+$text-headline: #565656;
+$text-subhead: #aa9f9d;
+
+// ui colors
+$ui-card-background-grey: #f7f7f7;
+$ui-outline-grey: #dcdcdc;
+$ui-section-grey: #fbfbfd;
+$ui-slider-bullet-grey: #d8d8d8;
+$ui-shadow-color: #acacac;
+$ui-solid-button-hover: #EB5A38;
+$ui-placeholder-grey: #b2b2b2;
+
+// ui shadow settings
+$ui-shadow-opacity: 0.5;
+$ui-shadow-blur: 24px;
+$ui-shadow-offset-x: 6px;
+$ui-shadow-offset-y: $ui-shadow-offset-x;
+
+// fonts
+$brand-font-body-copy: "proxima-nova", 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$brand-font-headline: "brandon-grotesque", 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$brand-font-button: $brand-font-headline;
+
+// font weights
+
+$brand-font-weight-thin: 100;
+$brand-font-weight-extra-light: 200;
+$brand-font-weight-light: 300;
+$brand-font-weight-normal: 400;
+$brand-font-weight-medium: 500;
+$brand-font-weight-semi-bold: 600;
+$brand-font-weight-bold: 700;
+$brand-font-weight-black: 800;
+
+// spacing
+$brand-spacing-level-1: 48px;
+$brand-spacing-level-2: $brand-spacing-level-1 * 2;
+$brand-spacing-level-3: $brand-spacing-level-1 * 3;
+
+$ui-radius: 4px;
+$ui-radius-circle: 9999px;
+$ui-transition-speed: .4s;

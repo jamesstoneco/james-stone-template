@@ -1,0 +1,43 @@
+---
+layout: styleguide
+template:
+- /home.html
+---
+
+<br>
+
+<p class="subhead text-center">Design Systems Engineering by <a href="http://www.jamesstone.com" target="_blank">James Stone Consulting</a></p>
+<hr class="short">
+<h1 class="text-center">Frontend Code + Living Styleguide Starter Project for ZURB Foundation 6.3</h1>
+
+<section class="background-grey">
+  <p class="subhead">HTML Front-end Code – click for live version</p>
+  <hr class="short">
+  <h2>Templates</h2>
+  
+  <div class="row align-center">
+    {{#each template}}
+    <div class="columns medium-4">
+      <a href="{{ this }}">
+        <div class="page-thumbnail" style="height:500px;">
+          <iframe src="{{ this }}" frameborder="0"></iframe>
+        </div>
+      </a>
+      <p class="text-center">
+        <a href="{{ this }}" class="button">View {{ this }}</a>
+      </p>
+    </div>
+    {{/each}}
+  </div>
+</section>
+
+<section>
+<div class="row">
+<div class="column small-12">
+  <p class="subhead">Developer documentation for HTML + CSS modules</p>
+  <hr class="short">
+  <h2>Coded / Living Styleguide</h2>
+  
+  <p class="text-center"><a href="/styleguide.html" class="button">View the Coded / Living Styleguide</a></p>
+</div></div>
+</section>
